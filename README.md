@@ -4,9 +4,8 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-An HTML/CSS website template perfect for a small academic or technology conference or seminar.
-The template is quick to deploy and straightforward to customize.
-You can [explore it live here](https://mikepierce.github.io/conference-website-template/),
+An HTML/CSS website for Global Revival Church Hawaii
+You can [explore it live here](https://cknakano.github.io/grcweb/),
 and see some folks' use of the template
 [here](https://math.ucr.edu/~mathconn/) 
 and [here](https://data-science-conference.github.io) 
