@@ -1,4 +1,4 @@
-(assets/grctemplate.PNG)
+[!(assets/grctemplate.PNG)
 
 ---
 
