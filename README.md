@@ -1,4 +1,4 @@
-[!(assets/grctemplate.PNG)
+[![Screenshot of the Website](assets/grctemplate.PNG)
 
 ---
 
