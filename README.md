@@ -14,9 +14,9 @@ by Alex Rutar, particularly the
 [Crash course in HTML and CSS](https://rutar.org/writing/how-to-build-a-personal-webpage-from-scratch/#crash-course-in-html-and-css) 
 section.
 
-## Sitemap (optional)
+## Sitemap
 
-The file `sitemap.xml` helps search engines understand the structure of your site.
+The file `sitemap.xml` helps search engines understand the structure of the site.
 In this file, each instance of "WEBSITE" should be replaced
 with the actual address where this website is being hosted.
 See the [sitemaps protocol page](https://www.sitemaps.org/protocol.html) for more details.
