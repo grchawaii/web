@@ -4,8 +4,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-An HTML/CSS website for Global Revival Church Hawaii
-You can [explore it live here](https://cknakano.github.io/grcweb/).
+An HTML/CSS website for Global Revival Church Hawaii. You can [explore it live here](https://cknakano.github.io/grcweb/).
 
 ## Editing the Template
 
