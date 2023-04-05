@@ -18,32 +18,23 @@
         <img src="assets/grchawaiibanner.jpg" alt="GRC Hawaii Long Banner">
     </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" title="Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="About Us" href="about">About Us</a>
-            </td>
-            <td class="navigation">
-                <div class="subnav">
-                    <button class="subnavbtn">Ministry/Mission <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="ministry">Ministry</a>
-                        <a href="mission">Mission</a>
-                        <a href="missiontrip">Mission Trip Gallery</a>
-                    </div>
-                </div>
-            </td>
-            <td class="navigation">
-                <a title="Directions to Services" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Gallery" href="gallery">Gallery</a>
-            </td>
-        </tr>
-    </table>
+    <div class="topnav" id="myTopnav">
+        <a href="." class="active">Home</a>
+        <a href="about">About Us</a>
+        <a href="directions">Directions</a>
+        <div class="dropdown">
+            <button class="dropbtn">Ministry/Mission
+                <i class="fa fa-caret-down"></i>
+            </button>
+         <div class="dropdown-content">
+            <a href="ministry">Ministry</a>
+            <a href="mission">Mission Work</a>
+            <a href="missiontrip">Mission Work Gallery</a>
+         </div>
+        </div>
+        <a href="gallery">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
     <h2>Service Times</h2>
     
