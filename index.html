@@ -6,6 +6,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/grcsmallicon.jpg"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="description" content="GRC Hawaii">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
@@ -17,6 +18,23 @@
     function offering() {
         window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFKVNG296TNKC", "offering", "width=900, height=870, scrollbars=no");
     }
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 </script>
 
     <p style="text-align:right;"><a title="Offering" href="#" onclick="offering();"><button class="btn">OFFERING/온라인헌금</button></a></p>
@@ -47,6 +65,14 @@
         </tr>
     </table>
 
+    <div class="w3-content w3-display-container">
+  <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
+  <img class="mySlides" src="img_lights.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+    
     <h2>Service Times</h2>
     
     <table style="width:100%">
