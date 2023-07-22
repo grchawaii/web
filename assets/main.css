@@ -198,7 +198,7 @@ td.sponsor img{width: 100%}
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 40px 14px 40px;
+  padding: 14px 56px 14px 56px;
   text-decoration: none;
 }
 
@@ -212,13 +212,13 @@ td.sponsor img{width: 100%}
   border: none;
   outline: none;
   color: white;
-  padding: 14px 40px 14px 40px;
+  padding: 14px 56px 14px 56px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
-.navbar:hover .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
