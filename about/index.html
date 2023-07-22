@@ -18,25 +18,21 @@
         <img src="assets/grchawaiibanner.jpg" alt="GRC Hawaii Long Banner">
     </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a title="Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a class="current" title="About Us" href="about">About Us</a>
-            </td>
-            <td class="navigation">
-                <a title="Ministry and Mission" href="ministry">Ministry/Mission</a> 
-            </td>
-            <td class="navigation">
-                <a title="Directions to Services" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="House of Prayer" href="houseofprayer">House of Prayer</a>
-            </td>
-        </tr>
-    </table>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="about">About Us</a>
+      <div class="dropdown">
+        <button class="dropbtn">Ministry/Mission 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="ministry">Ministry</a>
+          <a href="mission">Mission</a>
+        </div>
+      </div> 
+        <a href="directions">Directions</a>
+        <a href="houseofprayer">House of Prayer</a>
+    </div>
 
     <h2 style="padding-top:20px">About Us (교회소개)</h2>
     
