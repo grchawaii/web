@@ -28,6 +28,7 @@ body{
     background-color: #FFFFFF;
     background-size: cover;
     background-attachment: fixed;
+    background-image: linear-gradient(white 75%, lightblue)
     color: #505050; 
     text-align:left;
     font-family:'Roboto',sans-serif;
