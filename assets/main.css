@@ -189,7 +189,8 @@ td.sponsor img{width: 100%}
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: midnightblue;
+  margin-bottom: 50px;
 }
 
 .navbar a {
