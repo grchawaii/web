@@ -187,6 +187,11 @@ td.sponsor img{width: 100%}
     margin-left: -100%;
 }
 
+.container1 {
+      width:100%;
+      margin-left: 150px;
+  }
+
 footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 /* My hacky way of making the site mobile-friendly */
