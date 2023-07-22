@@ -218,7 +218,7 @@ td.sponsor img{width: 100%}
   margin: 0;
 }
 
-.dropdown:hover .dropbtn {
+.navbar:hover .dropdown:hover .dropbtn {
   background-color: red;
 }
 
