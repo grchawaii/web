@@ -37,13 +37,6 @@ body{
     width: 1000px;
 }
 
-.horizontal_line {
-            background-color: black;
-            width: 90%;
-            height: 5px;
-            line-height: 80%;
-        }
-
 .btn {
   background-color: DodgerBlue;
   border: none;
