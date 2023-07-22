@@ -241,7 +241,7 @@ td.sponsor img{width: 100%}
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: red;
 }
 
 .dropdown:hover .dropdown-content {
