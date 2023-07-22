@@ -25,10 +25,9 @@
 }
 
 body{
-    background-color: #FFFFFF;
+    background-color: linear-gradient(white 75%, lightblue);
     background-size: cover;
     background-attachment: fixed;
-    background: linear-gradient(white 75%, lightblue);
     color: #505050; 
     text-align:left;
     font-family:'Roboto',sans-serif;
