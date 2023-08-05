@@ -268,20 +268,20 @@ td.sponsor img{width: 100%}*/
 }
 
 .container{
-    width: 65vmin;
+    width: 60vmin;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 150%;
-    left: 25%;
+    top: 130%;
+    left: 32.5%;
     overflow: hidden;
-    border: 20px solid #ffffff;
+    border: 15px solid #ffffff;
     border-radius: 8px;
     box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
 }
 .wrapper{
     width: 100%;
     display: flex;
-    animation: slide 16s infinite;
+    animation: slide 25s infinite;
 }
 @keyframes slide{
     0%{
@@ -289,9 +289,6 @@ td.sponsor img{width: 100%}*/
     }
     50%{
         transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(-300%);
     }
 }
 img{
