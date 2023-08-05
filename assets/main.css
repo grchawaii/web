@@ -268,11 +268,11 @@ td.sponsor img{width: 100%}*/
 }
 
 .container{
-    width: 85vmin;
+    width: 65vmin;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    top: 150%;
+    left: 25%;
     overflow: hidden;
     border: 20px solid #ffffff;
     border-radius: 8px;
