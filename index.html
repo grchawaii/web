@@ -16,6 +16,25 @@
     function offering() {
         window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFKVNG296TNKC", "offering", "width=900, height=870, scrollbars=no");
     }
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 </script>
 
     <p style="text-align:right;"><a title="Offering" href="#" onclick="offering();"><button class="btn">OFFERING/온라인헌금</button></a></p>
@@ -46,12 +65,33 @@
 
     <div class="row">
   <div class="column" style="background-color:transparent; padding-top:100px">
-      <div class="container">
+    <!--  <div class="container">
         <div class="wrapper">
             <img src="assets/servicepic.jpg">
             <img src="assets/onlineresize.jpg">
         </div>
     </div>
+      -->
+      <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="assets/servicepic.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="assets/onlineresize.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
       <div class="redirect" style="padding-top:300px; text-align:center">
                 <a href="http://www.facebook.com/grchawaii">
                     <img src="assets/grcfb.png" alt="Facebook Page" style="width:320px; height:75px;">
