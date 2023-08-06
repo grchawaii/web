@@ -13,21 +13,6 @@
 </head>
 
 <script>
-    let index = 0;
-    displayImages();
-    function displayImages() {
-      let i;
-      const images = document.getElementsByClassName("image");
-      for (i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-      }
-      index++;
-      if (index > images.length) {
-        index = 1;
-      }
-      images[index-1].style.display = "block";
-      setTimeout(displayImages, 2000); 
-    }
     function offering() {
         window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFKVNG296TNKC", "offering", "width=900, height=870, scrollbars=no");
     }
@@ -69,14 +54,19 @@
     </div>
       -->
 
-      <div class="image-slideshow">
-      <div class="image fade">
-      <img src="assets/servicepic.jpg">
-      </div>        
-      <div class="image fade">
-      <img src="assets/onlineresize.jpg">
-      </div>        
-    </div>
+      <div class="slider-frame">
+            <div class="slide-images">
+                    <div class="img-container">
+                        <img src="image/image 1.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="image/image 2.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="image/image 3.jpg">
+                    </div>
+            </div>
+        </div>
       
       <div class="redirect" style="padding-top:300px; text-align:center">
                 <a href="http://www.facebook.com/grchawaii">
