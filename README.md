@@ -1,4 +1,4 @@
-![Screenshot of the Website](assets/grcpreview.PNG)
+![Screenshot of the Website](assets/grcpreview.png)
 
 ---
 
