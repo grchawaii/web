@@ -9,12 +9,12 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Church">
-    <title>GRC Hawaii</title>
+    <title>GRC Hawaii - DTS</title>
 </head>
 
-    <script>
+<script>
     function offering() {
-        window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFKVNG296TNKC", "offering", "width=900, height=870, scrollbars=no");
+        window.open("https://www.paypal.com/ncp/payment/7U6QCE56NMBFJ", "offering", "width=900, height=870, scrollbars=no");
     }
 </script>
 
@@ -27,7 +27,7 @@
       <a href="#">Home</a>
       <a href="about">About Us</a>
       <div class="dropdown">
-        <button class="dropbtn">Ministry/Mission 
+        <button class="dropbtn active-page">Ministry/Mission 
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
@@ -37,13 +37,37 @@
         </div>
       </div> 
         <a href="directions">Directions</a>
-        <a href="houseofprayer" class='active-page'>House of Prayer</a>
+        <a href="houseofprayer">House of Prayer</a>
         <a href="#" onclick="offering();" class="offering-link">OFFERING/온라인헌금</a>
     </div>
 
+
     <img src="assets/onethingheader.jpg" alt="One Thing, New Thing" width="1000" height="230">
+
+    <h2>Discipleship Training School (DTS) Registration</h2>
     
-    <h2 style="padding-top:20px">House of Prayer for All Nations</h2>
+    <p>Please fill out the form below to register for the Discipleship Training School.</p>
+
+    <div class="container-form">
+      <form name="dts-registration" method="POST" data-netlify="true">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="payment">Payment Option</label>
+        <select id="payment" name="payment">
+          <option value="pay_now">Pay Online Now</option>
+          <option value="pay_later">Pay Later / In Person</option>
+        </select>
+      
+        <input type="submit" value="Register">
+      </form>
+    </div>
 
     <footer>
         &copy; Global Revival Church Hawaii | 글로벌 리바이벌 교회
