@@ -142,6 +142,7 @@ td.sponsor img{width: 100%}*/
 .images {
     display: flex;
     width: 100%;
+    transition: all 0.15s ease;
 }
 .images img {
     height: 300px;
@@ -289,4 +290,45 @@ footer{font-size:0.875em; margin-top:4em; padding: 20px 0; text-align:center; cl
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
+}
+
+/* Service Times Section */
+.service-times-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.service-times-table tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.service-times-table tr:last-child {
+    border-bottom: none;
+}
+
+.service-times-table td {
+    padding: 15px 0;
+    font-size: 1.1em;
+    vertical-align: top;
+    color: #505050;
+}
+
+.service-times-table td:first-child {
+    font-weight: bold;
+    color: #813c54; /* Match heading color */
+    width: 55%;
+}
+
+.service-times-table td:last-child {
+    text-align: right;
+    font-weight: 500;
+}
+
+.service-note {
+    font-size: 0.85em;
+    color: #707070;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.4;
 }
