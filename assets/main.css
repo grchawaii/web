@@ -55,21 +55,6 @@ body{
   box-sizing: border-box;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 a{color: #b8860b; text-decoration:none;}
 a.current{color: #52739e;}
 a.current:hover{color: #e82945;}
@@ -259,7 +244,10 @@ td.sponsor img{width: 100%}*/
   float: left;
   width: 50%;
   padding: 20px;
-  height: 700px;
+}
+
+.column p {
+    width: 100%;
 }
 
 /* Clear floats after the columns */
@@ -291,7 +279,7 @@ td.sponsor img{width: 100%}*/
     }
 }
 
-footer{font-size:0.875em; margin-top:12em; text-align:center;}
+footer{font-size:0.875em; margin-top:4em; padding: 20px 0; text-align:center; clear: both; border-top: 1px solid #d0d0d0;}
 
 /* My hacky way of making the site mobile-friendly */
 @media only screen and (max-width: 1000px) {
