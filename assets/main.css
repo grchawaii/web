@@ -205,6 +205,39 @@ td.sponsor img{width: 100%}*/
   margin: 0;
 }
 
+/* Event Distinct Style for DTS Page */
+.event-distinct {
+    background-color: #f0f4f8;
+    border-left: 6px solid #b2132e;
+    padding: 20px;
+    margin: 20px auto;
+    width: 900px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.event-label {
+    display: block;
+    font-weight: bold;
+    color: #52739e;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.event-distinct h3 {
+    margin: 5px 0 10px 0;
+    color: #333;
+}
+
+.event-date {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #b2132e;
+    margin-top: 10px;
+}
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }

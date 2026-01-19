@@ -10,7 +10,7 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Church">
-    <title>GRC Hawaii - DTS</title>
+    <title>GRC Hawaii - Registration Successful</title>
 </head>
 
 <script>
@@ -42,51 +42,43 @@
         <a href="#" onclick="offering();" class="offering-link">OFFERING/온라인헌금</a>
     </div>
 
-
     <img src="assets/onethingheader.jpg" alt="One Thing, New Thing" width="1000" height="230">
 
-    <h2>Discipleship Training School (DTS) Registration</h2>
+    <h2>Registration Successful</h2>
     
     <div class="event-distinct">
-        <span class="event-label">Event</span>
         <h3>2-Week Intensive Healing and Discipleship Training</h3>
         <span class="event-date">Dates: February 7 - February 20</span>
     </div>
 
-    <p>Please fill out the form below to register for the Discipleship Training School.</p>
-
-    <div class="container-form">
-      <form name="dts-registration" method="POST" data-netlify="true" action="dts/success.html">
-        <input type="hidden" name="event_name" value="2-Week Intensive Healing and Discipleship Training">
-        <input type="hidden" name="event_dates" value="February 7 - February 20">
-        
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name.." required>
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your email.." required>
-
-        <label for="payment">Payment Option</label>
-        <select id="payment" name="payment">
-          <option value="Pay Online Now">Pay Online Now</option>
-          <option value="Pay Later / In Person">Pay Later / In Person</option>
-        </select>
-      
-        <input type="submit" value="Register">
-      </form>
+    <div id="registration-details" style="text-align: center; margin: 20px 0; display: none;">
+        <p><strong>Name:</strong> <span id="show-name"></span></p>
+        <p><strong>Email:</strong> <span id="show-email"></span></p>
+        <p><strong>Payment Method:</strong> <span id="show-payment"></span></p>
     </div>
 
     <script>
-      document.querySelector('form[name="dts-registration"]').addEventListener('submit', function(e) {
-          const formData = new FormData(e.target);
-          sessionStorage.setItem('dts_name', formData.get('name'));
-          sessionStorage.setItem('dts_email', formData.get('email'));
-          sessionStorage.setItem('dts_payment', formData.get('payment'));
-      });
+        document.addEventListener('DOMContentLoaded', function() {
+            const name = sessionStorage.getItem('dts_name');
+            const email = sessionStorage.getItem('dts_email');
+            let payment = sessionStorage.getItem('dts_payment');
+            
+            if (name && email && payment) {
+                document.getElementById('show-name').textContent = name;
+                document.getElementById('show-email').textContent = email;
+                document.getElementById('show-payment').textContent = payment;
+                document.getElementById('registration-details').style.display = 'block';
+            }
+        });
     </script>
+
+    <p>Thank you for registering.</p>
+    <p>Your registration has been received. We look forward to seeing you!</p>
+    <p>Print or screenshot this confirmation page for your records.</p>
+    
+    <p>
+        <a href="dts" class="btn">Return to DTS Page</a>
+    </p>
 
     <footer>
         &copy; Global Revival Church Hawaii | 글로벌 리바이벌 교회
