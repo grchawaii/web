@@ -34,7 +34,40 @@ body{
     font-size:1em;
     line-height:1.5em;
     margin: 60px auto;
-    width: 1000px;
+    width: 95%;
+    max-width: 1000px;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.welcome-section h1 {
+    margin-top: 0;
+    font-size: 2.2em;
+    color: #813c54;
+    font-family: 'Roboto Slab', serif;
+}
+
+.welcome-section p {
+    margin: 10px auto;
+    width: auto;
+    max-width: 800px;
+    font-size: 1.3em;
+    color: #505050;
+    line-height: 1.6;
 }
 
 .btn {
@@ -419,7 +452,7 @@ input[type=submit]:hover {
 
 /* --- New Slideshow Styles --- */
 .slideshow-container {
-  width: 600px; /* Reduced from 1000px */
+  width: 100%; /* Reduced from 1000px */
   position: relative;
   margin: 20px auto;
   overflow: hidden; /* Hide overflow */
@@ -432,8 +465,7 @@ input[type=submit]:hover {
 
 .mySlides img {
   width: 100%;
-  height: 300px; /* Reduced fixed height */
-  object-fit: cover; /* Ensures images cover the area without distortion */
+  height: auto; /* Allow height to adjust based on width */
   border-radius: 8px; /* Optional: adds rounded corners */
 }
 
