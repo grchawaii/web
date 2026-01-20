@@ -43,16 +43,62 @@
 
     <img src="assets/onethingheader.jpg" alt="One Thing, New Thing" width="1000" height="230">
 
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="mySlides fade">
+            <img src="assets/onethingheader.jpg" alt="One Thing">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides fade">
+            <img src="assets/servicepic.jpg" alt="Service">
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="mySlides fade">
+            <img src="assets/grchawaiibanner.jpg" alt="Banner">
+        </div>
+
+        <!-- To add more photos:
+             1. Upload your photo to the 'assets' folder in GitHub.
+             2. Copy one of the 'div class="mySlides fade"' blocks above.
+             3. Paste it below the others.
+             4. Change the 'src' to your new photo's filename (e.g., src="assets/my-new-photo.jpg").
+        -->
+    </div>
+
+    <!-- Slideshow Script -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+
     <div class="row">  
   <div class="column" style="background-color:transparent;">
-    <h2>Our Location</h2>
-    <p>
-        <b>Office & Service:</b><br>
-        99-860 Iwaena St, Suite 201, Aiea, HI 96701
-    </p>
-    <p>
-        <a href="directions"><b>Get Directions &raquo;</b></a>
-    </p>
+    <div class="location-card">
+        <h2>Our Location</h2>
+        <div class="location-address">
+            <b>Office & Service:</b><br>
+            99-860 Iwaena St, Suite 201,<br>
+            Aiea, HI 96701
+        </div>
+        <p>
+            <a href="directions" class="location-link">Get Directions &raquo;</a>
+        </p>
+    </div>
 
     <h2 style="margin-top:40px">Online Service</h2>
     <a href="https://www.youtube.com/@g.r.chawaii3276" target="_blank">
