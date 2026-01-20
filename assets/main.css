@@ -393,6 +393,27 @@ footer{font-size:0.875em; margin-top:4em; padding: 20px 0; text-align:center; cl
     h2 { font-size: 1.5em; }
     p { font-size: 1em; }
     .top-left { font-size: 2em; height: auto; padding: 10px; }
+
+    /* Mobile Navbar Fixes */
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar a, .dropdown .dropbtn {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .dropdown {
+        width: 100%;
+    }
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+    }
+    .dropdown-content a {
+        padding-left: 30px; /* Indent dropdown items on mobile */
+        text-align: left;
+    }
 }
 
 /* Service Times Section */
