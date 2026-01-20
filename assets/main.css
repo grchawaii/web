@@ -176,33 +176,38 @@ td.sponsor img{width: 100%}*/
 }
 */
 .navbar {
-  overflow: hidden;
   background-color: midnightblue;
+  display: flex;
 }
 
 .navbar a {
-  float: left;
+  flex: 1;
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 30px;
+  padding: 14px 0;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
+  flex: 1;
+  position: relative;
 }
 
 .dropdown .dropbtn {
+  width: 100%;
   font-size: 16px;  
   border: none;
   outline: none;
   color: white;
-  padding: 14px 30px;
+  padding: 14px 0;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  cursor: pointer;
 }
 
 /* Event Distinct Style for DTS Page */
@@ -214,6 +219,10 @@ td.sponsor img{width: 100%}*/
     width: 900px;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.event-distinct p {
+    width: auto;
 }
 
 .event-label {
@@ -246,7 +255,7 @@ td.sponsor img{width: 100%}*/
   display: none;
   position: absolute;
   background-color: midnightblue;
-  min-width: 160px;
+  min-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -268,15 +277,14 @@ td.sponsor img{width: 100%}*/
   display: block;
 }
 
-.navbar a.active-page
+.navbar .active-page
 {
   background-color:indianred;
 }
 
 .navbar a.offering-link {
-  float: right;
   background-color: DodgerBlue;
-  padding: 14px 30px;
+  padding: 14px 0;
 }
 
 .navbar a.offering-link:hover {
