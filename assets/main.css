@@ -34,8 +34,7 @@ body{
     font-size:1em;
     line-height:1.5em;
     margin: 60px auto;
-    width: 95%;
-    max-width: 1000px;
+    width: 1000px;
 }
 
 .responsive-img {
@@ -380,41 +379,6 @@ td.sponsor img{width: 100%}*/
 }
 
 footer{font-size:0.875em; margin-top:4em; padding: 20px 0; text-align:center; clear: both; border-top: 1px solid #d0d0d0;}
-
-/* Mobile-friendly adjustments */
-@media only screen and (max-width: 1000px) {
-    .column {
-        width: 100%;
-    }
-    .row {
-        flex-direction: column;
-    }
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.5em; }
-    p { font-size: 1em; }
-    .top-left { font-size: 2em; height: auto; padding: 10px; }
-
-    /* Mobile Navbar Fixes */
-    .navbar {
-        flex-direction: column;
-    }
-    .navbar a, .dropdown .dropbtn {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .dropdown {
-        width: 100%;
-    }
-    .dropdown-content {
-        position: relative;
-        width: 100%;
-    }
-    .dropdown-content a {
-        padding-left: 30px; /* Indent dropdown items on mobile */
-        text-align: left;
-    }
-}
 
 /* Service Times Section */
 .service-times-table {
